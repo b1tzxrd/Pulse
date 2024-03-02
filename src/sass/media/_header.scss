@@ -1,0 +1,29 @@
+@media (max-width: 720px) {
+    .header {
+        &__logo {
+            flex-shrink: 0;
+            width: 200px;
+            img {
+                flex-grow: 1;
+            }
+        }
+        &__official {
+            margin: 0 10px 0 10px;
+            font-size: 10px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        .button {
+            width: 130px;
+        }
+    }
+}
+
+@media (max-width: 565px) {
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+}
