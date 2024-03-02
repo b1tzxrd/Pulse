@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -95,10 +95,11 @@
                 Просто заполните форму заявки и мы перезвоним вам в течении 10 минут
             </div>
             <form id="consultation-form" class="feed-form" action="#">
-                <input type="text" name="name" placeholder="Ваше имя">
-                <input type="tel" name="phone" placeholder="+7 (888)-555-33-22">
-                <input type="email" name="email" placeholder="Ваш email">
-                <input type="submit" name="submit" value="заказать консультацию" class="button button__submit">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать консультацию</button>
             </form>
         </div>
     </section>
@@ -509,9 +510,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" placeholder="Ваше имя" type="text"> 
-                <input name="phone" placeholder="Ваш телефон"> 
-                <input name="email" placeholder="Ваш E-mail" type="email"> 
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
@@ -522,9 +523,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text"> 
-                <input name="phone" required placeholder="Ваш телефон"> 
-                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">купить</button>
             </form>
@@ -533,10 +534,14 @@
         <div class="modal modal_mini" id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
-            <div class="modal__descr">Наш менеджер свяжется с вами 
+            <div class="modal__descr">Наш менеджер свяжется с вами
                 в ближайшее время!</div>
         </div>
     </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="">
+    </a>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
